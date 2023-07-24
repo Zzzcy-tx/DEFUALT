@@ -36,5 +36,8 @@ void track_line(void)
         // real_set_left=limit_int(init_speed+wheel_error,init_speed*0.3,init_speed*1.7);
         // real_set_right=limit_int(init_speed-wheel_error,init_speed*0.3,init_speed*1.7);
 
-        motor_speed_set(pid_left.target_val -diff_speed,pid_right.target_val + diff_speed);
+        pid_left.target_val -= diff_speed;
+        pid_right.target_val += diff_speed;
+
+        // motor_speed_set(pid_left.target_val -diff_speed,pid_right.target_val + diff_speed);
 }
