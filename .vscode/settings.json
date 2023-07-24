@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "timer.h": "c",
+        "fd_demo.h": "c",
+        "motor_control.h": "c",
+        "MOTOR_CONTROL.H": "cpp"
+    }
+}
